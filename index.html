@@ -1,13 +1,35 @@
-
-<marquee behavior="scroll" direction="left">
- <h1><button type="submit"></button>Aku Cinta Kamu!
+HTML
+<!DOCTYPE html>
+<html lang="id">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Tulisan Full Layar</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="tulisan-full-layar"><marquee behavior="scroll" direction="left">
+ <h1>Aku Cinta Kamu!
  Apakah Kamu Mencintaiku?</h1>
-</marquee>
-
-<style>
-@keyframes {
-  0% {color: red;}
-  50% {color: pink;}
-  100% {color: red;}
+</marquee></div>
+</body>
+</html>
+<body, html {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ height: 100%;
 }
-</style>
+
+.tulisan-full-layar {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-size: 50vw; /* Ukuran font sesuai lebar layar */
+ text-align: center;
+}
+
+- 50vw: 50% lebar layar
+- 75vw: 75% lebar layar
+- 100vw: 100% lebar layar
